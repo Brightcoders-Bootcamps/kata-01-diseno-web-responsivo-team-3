@@ -11,3 +11,30 @@
   *{
       border: solid 1px red;
   }
+
+  .get-started__form{
+    
+    font-family: Poppins;
+    font-size:18px;
+    color:#FFFFFF;
+    background-color: #00FFFF;
+    border: none;
+    border-radius: 6x;
+    cursor: pointer;
+    width: 270px;
+    height: 53px; 
+
+   }
+  .shortenlink-form__form-input2 {
+    font-family: Poppins;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #00FFFF;
+    border: none;
+    border-radius: 3x;
+    cursor: pointer;
+    width: 270px;
+    height: 53px; 
+    box-shadow: 
+  }
+
