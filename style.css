@@ -7,7 +7,11 @@
     color: hsl(228, 45%, 44%);
   }
 
-  body { width: 375px; text-align: center;}
+  body {
+    font-family: 'Poppins', sans-serif;
+    width: 375px;
+    text-align: center;
+  }
   *{
       border: solid 1px blue;
   }
