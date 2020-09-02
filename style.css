@@ -9,5 +9,14 @@
 
   body { width: 375px; text-align: center;}
   *{
-      border: solid 1px red;
+      border: solid 1px blue;
+  }
+
+ 
+  .shortenlink-form__form-input2 {
+    background-color: #4169E1;
+	  border: none;
+	  border-radius: 5px;
+    cursor: pointer;
+
   }
