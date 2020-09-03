@@ -24,24 +24,25 @@ body {
   font-family: Poppins;
   font-size:18px;
   color:#FFFFFF;
-  background-color: #00FFFF;
+  background-color: hsl(180, 66%, 49%);
   border: none;
-  border-radius: 6x;
+  border-radius: 85px;
   cursor: pointer;
-  width: 270px;
-  height: 53px; 
+  width: 160px;
+  height: 48px; 
+  margin: auto
 
  }
 .shortenlink-form__form-input2 {
   font-family: Poppins;
   font-size: 18px;
   color: #FFFFFF;
-  background-color: #00FFFF;
+  background-color:hsl(180, 66%, 49%);
   border: none;
-  border-radius: 3x;
+  border-radius: 3px;
   cursor: pointer;
   width: 270px;
-  height: 53px; 
+  height: 47px; 
 }
 
 .attribution {
@@ -53,17 +54,8 @@ body {
     color: hsl(228, 45%, 44%);
   }
 
-
-
-
- 
-  .shortenlink-form__form-input2 {
-    background-color: #4169E1;
-	  border: none;
-	  border-radius: 5px;
-    cursor: pointer;
-
-  }
-
-
-
+.shortenlink-form__form-input1 {
+color: hsl(0, 0%, 75%);
+text-align: left;
+font-family: 'Poppins';
+}
