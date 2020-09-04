@@ -4,28 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-<link rel="stylesheet" href="style.css" type="text/css"/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
   <title>Shortly</title>
-
+  <script src="https://kit.fontawesome.com/2141aee2ff.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
-        <nav class="nav">
-				<ul class="nav__ul">
-          <li><a href=""><img src="images/logo.svg"></a></li>
-          <li><a href="">Features</a></li>
-					<li><a href="">Features</a></li>
-					<li><a href="">Pricing</a></li>
-          <li><a href="">Resources</a></li>
-                    
-          <li><a href="">Login</a></li>
-          <li><a href="">Sign Up</a></li>
-				</ul>
+      <img src="images/logo.svg">
+      <nav class="nav">
+        <ul class="nav__ul">
+          
+          <li class= "nav__li"><a href="#">Features</a></li>
+          <li class= "nav__li"><a href="#">Pricing</a></li>
+          <li class= "nav__li"><a href="#">Resources</a></li>
+          <li class= "nav__li"><a href="#">Login</a></li>
+          <li class= "nav__li"><a href="#">Sign Up</a></li>
+        </ul>
+        <ul class="nav__responsive-ul">
+          
+          <div class= "nav__responsive-button fas fa-bars"></div>
+
+          <div class="nav__li-container">
+            
+            <li class= "nav__responsive-li"><a href="#">Features</a></li>
+            <li class= "nav__responsive-li"><a href="#">Pricing</a></li>
+            <li class= "nav__responsive-li"><a href="#">Resources</a></li>
+            <li class= "nav__responsive-li"><a href="#">Login</a></li>
+            <li class= "nav__responsive-li"><a href="#">Sign Up</a></li>
+          </div>
+        </ul>
 			</nav>
     </header>
     
@@ -35,8 +45,8 @@
     <h1>More than just shorter links</h1> 
     
     <p>
-       Build your brand’s recognition and get detailed insights
-       on how your links are performing.
+      Build your brand’s recognition and get detailed insights
+      on how your links are performing.
     </p> 
   
     <form class="get-started__form">

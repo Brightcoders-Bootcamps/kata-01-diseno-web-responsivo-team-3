@@ -1,14 +1,55 @@
 * {
 
   }
+
+.nav__responsive-ul {
+  display: none;
+}
+
 body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  width: 100%;
 }
-.nav__ul {
+.nav__li {
+  display: inline-block;
   list-style:none ;
-  
+  padding: 12px;
 }
+
+.nav__li a {
+  color: hsl(0, 0%, 75%);
+  text-decoration: none;
+}
+.nav__li:hover > a {
+  color: #454545;
+}
+
+
+.nav__responsive-button {
+  float: right;
+  font-size: 25px;
+
+}
+
+@media only screen and (max-width: 650px) {
+  .nav__ul {
+    display:none;
+  }
+
+  .nav__responsive-ul {
+    display: block;
+
+  }
+  .nav__responsive-li {
+    list-style: none;
+  }
+  .nav__responsive-li a {
+    text-decoration: none;
+  }
+}
+
 .get-started h1 {
   font-size: 700;
   color:#454545 ;
