@@ -1,0 +1,51 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+
+.get-started h1 {
+  font-size: 700;
+  color:#454545 ;
+}
+
+.get-started p {
+  font-size:500;
+  color: hsl(257, 7%, 63%);
+}
+
+.get-started-form{
+  
+  font-family: Poppins;
+  font-size:18px;
+  color:#FFFFFF;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 85px;
+  cursor: pointer;
+  width: 160px;
+  height: 48px; 
+  margin: auto
+
+ }
+.shortenlink-form-form-input2 {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color:hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 270px;
+  height: 47px; 
+}
+
+
+.shortenlink-form-form-input1 {
+color: hsl(0, 0%, 75%);
+text-align: left;
+font-family: 'Poppins';
+}

@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <link rel="stylesheet" href="section-one.css" type="text/css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="header.css" type="text/css"/>
+  <link rel="stylesheet" href="footer.css" type="text/css"/>
+
   <title>Shortly</title>
   <script src="https://kit.fontawesome.com/2141aee2ff.js" crossorigin="anonymous"></script>
 </head>
@@ -13,35 +16,37 @@
 <body>
 
     <header>
-      <img src="images/logo.svg">
+      <div>
+      <img src="images/logo.svg" class="logo">
+    </div>
+    <div>
       <nav class="nav">
-        <ul class="nav__ul">
+        <ul class="nav-ul">
           
-          <li class= "nav__li"><a href="#">Features</a></li>
-          <li class= "nav__li"><a href="#">Pricing</a></li>
-          <li class= "nav__li"><a href="#">Resources</a></li>
-          <li class= "nav__li"><a href="#">Login</a></li>
-          <li class= "nav__li"><a href="#">Sign Up</a></li>
+          <li class= "nav-li"><a href="#">Features</a></li>
+          <li class= "nav-li"><a href="#">Pricing</a></li>
+          <li class= "nav-li"><a href="#">Resources</a></li>
+          <li class= "nav-li"><a href="#">Login</a></li>
+          <li class= "nav-li"><a href="#">Sign Up</a></li>
         </ul>
-        <ul class="nav__responsive-ul">
-          
-          <div class= "nav__responsive-button fas fa-bars"></div>
-
-          <div class="nav__li-container">
+        <ul class="nav-responsive-ul">
+         
+          <div class="nav-li-container fas fa-bars">
             
-            <li class= "nav__responsive-li"><a href="#">Features</a></li>
-            <li class= "nav__responsive-li"><a href="#">Pricing</a></li>
-            <li class= "nav__responsive-li"><a href="#">Resources</a></li>
-            <li class= "nav__responsive-li"><a href="#">Login</a></li>
-            <li class= "nav__responsive-li"><a href="#">Sign Up</a></li>
+            <li class= "nav-responsive-li"><a href="#">Features</a></li>
+            <li class= "nav-responsive-li"><a href="#">Pricing</a></li>
+            <li class= "nav-responsive-li"><a href="#">Resources</a></li>
+            <li class= "nav-responsive-li"><a href="#">Login</a></li>
+            <li class= "nav-responsive-li"><a href="#">Sign Up</a></li>
           </div>
         </ul>
-			</nav>
+      </nav>
+    </div>
     </header>
     
         
   <div class="get-started">
-    <img src="images/illustration-working.svg" class="contact-form__img">
+    <img src="images/illustration-working.svg" class="contact-form-img">
     <h1>More than just shorter links</h1> 
     
     <p>
@@ -49,16 +54,16 @@
       on how your links are performing.
     </p> 
   
-    <form class="get-started__form">
-        <input type="submit" value="Get Started" class="get-started__form">
+    <form class="get-started-form">
+        <input type="submit" value="Get Started" class="get-started-form">
     </form>
   </div>
 
   <div class="form">
-    <form class="shortenlink-form__form">
-        <input type="email" required="" value="Shorten a link here" class="shortenlink-form__form-input1">
+    <form class="shortenlink-form-form">
+        <input type="email" required="" value="Shorten a link here" class="shortenlink-form-form-input1">
 
-        <input type="submit" value="Shorten it!" class="shortenlink-form__form-input2">
+        <input type="submit" value="Shorten it!" class="shortenlink-form-form-input2">
     </form>
   </div>
   
