@@ -6,19 +6,28 @@ body {
   width: 100%;
 }
 
+.get-started {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .get-started h1 {
-  font-size: 700;
+  font-size: 50px;
   color:#454545 ;
+  font-weight: 700;
 }
 
 .get-started p {
-  font-size:500;
+  font-size: 22px;
   color: hsl(257, 7%, 63%);
+  font-weight: 500;
 }
 
-.get-started-form{
-  
+.button {
+  display: grid; 
   font-family: Poppins;
   font-size:18px;
   color:#FFFFFF;
@@ -28,9 +37,11 @@ body {
   cursor: pointer;
   width: 160px;
   height: 48px; 
-  margin: auto
-
+  text-decoration: none;
+  place-content: center;
+  font-weight: 700;
  }
+
 .shortenlink-form-form-input2 {
   font-family: Poppins;
   font-size: 18px;
@@ -43,9 +54,12 @@ body {
   height: 47px; 
 }
 
-
 .shortenlink-form-form-input1 {
 color: hsl(0, 0%, 75%);
 text-align: left;
 font-family: 'Poppins';
+}
+
+.contact-form-img {
+  width: 100%;
 }
