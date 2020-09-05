@@ -40,24 +40,6 @@ body {
   text-decoration: none;
   place-content: center;
   font-weight: 700;
- }
-
-.shortenlink-form-form-input2 {
-  font-family: Poppins;
-  font-size: 18px;
-  color: #FFFFFF;
-  background-color:hsl(180, 66%, 49%);
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  width: 270px;
-  height: 47px; 
-}
-
-.shortenlink-form-form-input1 {
-color: hsl(0, 0%, 75%);
-text-align: left;
-font-family: 'Poppins';
 }
 
 .contact-form-img {
