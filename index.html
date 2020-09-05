@@ -4,60 +4,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-
-
+  <link rel="stylesheet" href="section-one.css" type="text/css"/>
+  <link rel="stylesheet" href="section-two.css" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="header.css" type="text/css"/>
+  <link rel="stylesheet" href="footer.css" type="text/css"/>
 
   <title>Shortly</title>
-
-  <style>
-    .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
-  </style>
+  <script src="https://kit.fontawesome.com/2141aee2ff.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header>
-        <nav class="nav">
-                <img/>
-				<ul class="nav__ul">
-					<li><a href="">Features</a></li>
-					<li><a href="">Pricing</a></li>
-                    <li><a href="">Resources</a></li>
-                    
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Sign Up</a></li>
-				</ul>
-			</nav
-    </header>
-    
+ <header>
+    <div>
+      <img src="images/logo.svg" class="logo">
+    </div>
+    <div>
+      <nav class="nav">
+        <ul class="nav-ul">
+          
+          <li class= "nav-li"><a href="#">Features</a></li>
+          <li class= "nav-li"><a href="#">Pricing</a></li>
+          <li class= "nav-li"><a href="#">Resources</a></li>
+          <li class= "nav-li"><a href="#">Login</a></li>
+          <li class= "nav-li"><a href="#">Sign Up</a></li>
+        </ul>
+        <ul class="nav-responsive-ul">
+         
+          <div class="nav-li-container fas fa-bars">
+            
+            <li class= "nav-responsive-li"><a href="#">Features</a></li>
+            <li class= "nav-responsive-li"><a href="#">Pricing</a></li>
+            <li class= "nav-responsive-li"><a href="#">Resources</a></li>
+            <li class= "nav-responsive-li"><a href="#">Login</a></li>
+            <li class= "nav-responsive-li"><a href="#">Sign Up</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+ </header>
+    <div>
+      <img src="images/illustration-working.svg" class="contact-form-img">
+    </div>
         
   <div class="get-started">
+    
     <h1>More than just shorter links</h1> 
-    <img src="illustration-working.svg" class="contact-form__img">
-
     <p>
-        Build your brand’s recognition and get detailed insights
-        on how your links are performing.
+      Build your brand’s recognition and get detailed insights
+      on how your links are performing.
     </p> 
-  
-    <form class="get-started__form">
-        <input type="submit" value="Get Started" class="get-started__form">
-    </form>
+    <a href="#" class="button">Get Started</a>
+    
   </div>
 
   <div class="form">
-    <form class="shortenlink-form__form">
-        <input type="email" required="" class="shortenlink-form__form-input1">
-        <p>Please add a link</p>
-        <input type="submit" value="Shorten it!" class="shortenlink-form__form-input2">
+    <form class="shortenlink-form-form">
+        <input type="email" required="" value="Shorten a link here" class="shortenlink-form-form-input1">
+
+        <input type="submit" value="Shorten it!" class="shortenlink-form-form-input2">
     </form>
   </div>
   
@@ -72,7 +78,7 @@
   </div>
 
   <div>
-    <img src="icon-brand-recognition.svg">
+    <img src="images/icon-brand-recognition.svg">
     <h1>
     Brand Recognition
     </h1>
@@ -86,7 +92,7 @@
   </div>
 
   <div>
-      <img src="icon-detailed-records.svg">
+      <img src="images/icon-detailed-records.svg">
       <h1>Detailed Records</h1>
       <p>
         Gain insights into who is clicking
