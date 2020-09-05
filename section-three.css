@@ -1,0 +1,18 @@
+.advanced-statistics {
+  width: 100vw;
+  background-color: var(--light-gray);
+}
+
+.second-heading {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+  font-size: 25px;
+}
+
+.description {
+  font-weight: 500;
+  color: var(--grayish-violet);
+  font-size: 15px;
+  padding: 0 45px;
+
+}
