@@ -1,10 +1,159 @@
+.boostLink {
+  background-image:url(images/bg-boost-mobile.svg);
+  background-color: hsl(257, 27%, 26%);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  background-position: right;
+}
+.boostLink-h2 {
+  color: #ffffff;
+  font-size: 27px;
+  margin-top: 8px;
+}
+.boostLink-a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: hsl(180, 66%, 49%);
+  font-size: 20px;
+  border-radius: 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  
+}
+.footer {
+  background-color: hsl(260, 8%, 14%);
+}
+.footerLogo {
+  display: flex;
+  justify-content: center;
+  padding: 8%;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.features h3 {
+  font-size: 17px;
+  height: 10px;
+}
+.features-ul {
+  padding: 0;
+}
+.features-li {
+  list-style: none;
+}
+.features-li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+  line-height: 2;
+}
+.resources {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.resources h3 {
+  font-size: 17px;
+  height: 10px;
+}
+.resources-ul {
+  padding: 0;
+}
+.resources-li {
+  list-style: none;
+}
+.resources-li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+  line-height: 2;
+}
+.company {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.company h3 {
+  font-size: 17px;
+  height: 10px;
+}
+.company-ul {
+  padding: 0;
+}
+.company-li {
+  list-style: none;
+}
+.company-li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+  line-height: 2;
+}
+.icons {
+  margin-bottom: 0px;
+  padding: 25px;
+  height: 50px;
+}
+.icons-ul {
+  margin: 0;
+  padding: 0;
+}
+.icons-li{
+  display: inline;
+  list-style: none;
+  padding: 8px;
+}
+@media only screen and (min-width: 550px) {
+  .boostLink {
+    background-image: url(images/bg-boost-desktop.svg);
+    height: 240px;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .boostLink-h2{
+    font-size: 38px;
+  }
+  .boostLink-a:hover {
+    background-color: rgb(182, 236, 255);
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    height: 300px;
+  }
+  .footerLogo {
+    padding: 4%;
+  }
+  .features-li:hover > a {
+    color:hsl(180, 66%, 49%) ;
+  }
+  .resources-li:hover > a {
+    color:hsl(180, 66%, 49%) ;
+  }
+  .company-li:hover > a {
+    color:hsl(180, 66%, 49%) ;
+  }
+}
 
-.attribution {
+
+
+
+/*.attribution {
     font-size: 11px;
     text-align: center;
   }
 
   .attribution a {
     color: hsl(228, 45%, 44%);
-  }
+  }*/
 
