@@ -18,10 +18,15 @@
 .description {
   font-weight: 500;
   color: var(--grayish-violet);
-  font-size: 15px;
+  font-size: 16px;
   padding: 0 22px;
   margin-bottom: 75px;
+}
 
+  .box-description {
+    font-weight: 500;
+    color: var(--grayish-violet);
+    font-size: 16px;
   }
 
 .background-image {
@@ -29,22 +34,40 @@
   border-radius: 50%;
   padding: 22px;
   margin-top: -41px;
-  display: block;
+  display: grid;
+  place-content: center;
   width: 40px;
   height: 40px;
 }
 
-.white-background {
-  background-color: var(--white);
-  margin: 25px;
-  border-radius: 7px;
+.boxes-list {
+  list-style: none;q
+  margin: 0;
+  padding: 0;
+  width: 100vw;
   display: grid;
   justify-items: center;
 }
 
-.card-description {
-  font-weight: 500;
-  color: var(--grayish-violet);
-  font-size: 15px;
-  padding: 0 22px;
+.box {
+  background: var(--white);
+  border-radius: 7px;
+  width: 75%;
+  margin-bottom: 80px;
+  padding: 0 25px 30px;
+  display: grid;
+  justify-items: center;
+}
+
+.box::before {
+  content: '';
+  background: var(--cyan);
+  display: grid;
+  width: 7px;
+  height: 80px;
+  margin-top: -80px;
+}
+
+.box:first-child::before {
+  content: none;
 }
