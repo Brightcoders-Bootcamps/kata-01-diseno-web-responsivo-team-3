@@ -105,6 +105,12 @@
   margin: 0;
   padding: 0;
 }
+.icon-svg {
+  fill: #ffffff;
+}
+.icon-svg:hover {
+  fill:hsl(180, 66%, 49%) ;
+}
 .icons-li{
   display: inline;
   list-style: none;
