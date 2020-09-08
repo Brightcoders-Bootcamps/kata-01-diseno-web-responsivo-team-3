@@ -1,9 +1,10 @@
 
 body {
-  margin: 0;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  width: 100%;
+}
+*{
+  border: 1px solid red;
 }
 
 .get-started {
@@ -43,5 +44,6 @@ body {
 }
 
 .contact-form-img {
-  width: 100%;
+  width: 145%;
+  margin-top: 10%;
 }

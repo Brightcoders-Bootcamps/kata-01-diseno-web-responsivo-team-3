@@ -10,54 +10,46 @@
   <link rel="stylesheet" href="header.css" type="text/css"/>
   <link rel="stylesheet" href="footer.css" type="text/css"/>
 
+ 
+
   <title>Shortly</title>
   <script src="https://kit.fontawesome.com/2141aee2ff.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
- <header>
-    <div>
+ <header class="header">
+      <div>
       <img src="images/logo.svg" class="logo">
-    </div>
-    <div>
-      <nav class="nav">
-        <ul class="nav-ul">
-          
-          <li class= "nav-li"><a href="#">Features</a></li>
-          <li class= "nav-li"><a href="#">Pricing</a></li>
-          <li class= "nav-li"><a href="#">Resources</a></li>
-          <li class= "nav-li"><a href="#">Login</a></li>
-          <li class= "nav-li"><a href="#">Sign Up</a></li>
+      </div>
+        <details class="nav">
+        <summary><img src="images/menu.svg"></summary>
+        <ul class="nav-list">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+          <li class="hr-line"><hr/></li>
+          <li><a href="#">Login</a></li>
+
+          <li><a href="#" class="sign-up">Sign Up</a></li>
+        
         </ul>
-        <ul class="nav-responsive-ul">
-         
-          <div class="nav-li-container fas fa-bars">
-            
-            <li class= "nav-responsive-li"><a href="#">Features</a></li>
-            <li class= "nav-responsive-li"><a href="#">Pricing</a></li>
-            <li class= "nav-responsive-li"><a href="#">Resources</a></li>
-            <li class= "nav-responsive-li"><a href="#">Login</a></li>
-            <li class= "nav-responsive-li"><a href="#">Sign Up</a></li>
-          </div>
-        </ul>
-      </nav>
-    </div>
- </header>
+      </details>
+    
+</header>
+
     <div>
       <img src="images/illustration-working.svg" class="contact-form-img">
     </div>
-        
-  <div class="get-started">
-    
-    <h1>More than just shorter links</h1> 
-    <p>
-      Build your brand’s recognition and get detailed insights
-      on how your links are performing.
-    </p> 
-    <a href="#" class="button">Get Started</a>
-    
-  </div>
+    <div class="get-started">
+      
+      <h1>More than just shorter links</h1> 
+      <p>
+        Build your brand’s recognition and get detailed insights
+        on how your links are performing.
+      </p> 
+      <a href="#" class="button">Get Started</a>
+    </div>
 
   <div class="form">
     <form class="shortenlink-form-form">
