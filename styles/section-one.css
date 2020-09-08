@@ -2,10 +2,9 @@
 body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  margin: 0;
 }
 
-.image {
+.image{
   background-image: url(images/illustration-working.svg);
   width: 100vw;
   background-size: cover;

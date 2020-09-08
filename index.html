@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shortly</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="styles/colors.css">
   <link rel="stylesheet" href="section-one.css" type="text/css"/>
-  <link rel="stylesheet" href="section-two.css" type="text/css"/>
-  <link rel="stylesheet" href="section-three.css">
-  <link rel="stylesheet" href="header.css" type="text/css"/>
-  <link rel="stylesheet" href="footer.css" type="text/css"/>
+  <link rel="stylesheet" href="styles/section-two.css" type="text/css"/>
+  <link rel="stylesheet" href="styles/section-three.css">
+  <link rel="stylesheet" href="styles/header.css" type="text/css"/>
+  <link rel="stylesheet" href="styles/footer.css" type="text/css"/>
   <script src="https://kit.fontawesome.com/2141aee2ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -20,7 +20,11 @@
       <img src="images/logo.svg" class="logo">
     </div>
     <details class="nav">
-      <summary><img src="images/menu.svg"></summary>
+      <summary><svg class="menu-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+        <title>menu</title>
+        <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z" ></path>
+        </svg>
+        </summary>
       <ul class="nav-list">
         <li><a href="#">Features</a></li>
         <li><a href="#">Pricing</a></li>
@@ -31,9 +35,7 @@
       </ul>
     </details>   
   </header>
-    <div>
-      <img src="images/illustration-working.svg" class="contact-form-img">
-    </div>
+    <div class="image"></div>
     <div class="get-started">
       
       <h1>More than just shorter links</h1> 
