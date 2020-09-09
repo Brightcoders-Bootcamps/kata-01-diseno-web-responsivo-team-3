@@ -6,6 +6,13 @@ body {
   margin: 0;
 }
 
+.grid-one {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+
+}
+
+
 .image{
   background-image: url(images/illustration-working.svg);
   width: 100vw;
@@ -24,6 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 40%;
   
 }
 

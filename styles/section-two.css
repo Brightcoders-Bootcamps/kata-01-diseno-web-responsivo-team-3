@@ -1,14 +1,15 @@
-.form {
+.shortenlink-form-form {
   background-color: hsl(257, 27%, 26%);
   background-image:url(images/bg-shorten-mobile.svg);
-  border-radius: 8px;
-  padding: 30px;
-  margin: 25px 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-repeat: no-repeat;
   background-position: top right;
+  border-radius: 8px;
+  padding: 26px;
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  z-index: 10;
+  align-self: end;
+  justify-self: center;
 }
 
 .shortenlink-form-form-input2 {
@@ -22,6 +23,7 @@
   display: block;
   height: 40px;
   width: 250px;
+  font-weight: 700;
 }
 
 .shortenlink-form-form-input1 {
@@ -34,5 +36,6 @@
   display: block;
   height: 40px;
   width: 250px;
+  padding-left: 5%;
 }
 
