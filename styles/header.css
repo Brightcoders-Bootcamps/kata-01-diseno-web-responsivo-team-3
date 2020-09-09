@@ -7,6 +7,9 @@
   position: relative;
 }
 
+* {
+  border: 1px solid red;
+}
 .logo { 
   text-align: left;
   margin-left: 25px;  
@@ -62,18 +65,35 @@
   }
   .nav-desktop {
     display: flex;
-    flex-direction: row;
+    flex-basis: 75%;
+    
   }
   .nav-desktop li{
     list-style: none;
   }
   .nav-desktop a {
     text-decoration: none;
+    padding: 0 20px;
+    font-weight: 700;
+    color: var(--grayish-violet);
+    font-size: 15px;
+    
   }
-  .nav-desktop1 a {
+
+  .nav-desktop2 {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .nav-desktop2 a {
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 15px;
+    
+
   }
     
 }
