@@ -1,6 +1,6 @@
 .shortenlink-form-form {
   background-color: hsl(257, 27%, 26%);
-  background-image:url(images/bg-shorten-mobile.svg);
+  background-image:url('../images/bg-shorten-mobile.svg');
   background-repeat: no-repeat;
   background-position: top right;
   border-radius: 8px;

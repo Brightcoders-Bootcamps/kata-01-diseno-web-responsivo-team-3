@@ -26,6 +26,22 @@
   margin-bottom: 75px;
 }
 
+@media screen and (min-width: 760px) {
+  .second-heading {
+    font-size: 40px;
+    color: var(--very-dark-blue);
+  }
+
+  .sub-heading {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--very-dark-blue);
+  }
+
+  .description {
+    font-size: 30px;
+  }
+}
   .box-description {
     font-weight: 500;
     color: var(--grayish-violet);
@@ -74,3 +90,5 @@
 .box:first-child::before {
   content: none;
 }
+
+
