@@ -1,6 +1,9 @@
 .advanced-statistics {
   width: 100vw;
   background-color: var(--light-gray);
+  grid-column: 1;
+  grid-row: 3 / span 3;
+  padding-top: 40%;
 }
 
 .second-heading {
