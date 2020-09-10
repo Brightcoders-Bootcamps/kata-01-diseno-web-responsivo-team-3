@@ -9,7 +9,7 @@ body {
 .image{
   background-image: url(images/illustration-working.svg);
   width: 100vw;
-  background-size: cover;
+  background-size: 130vw;
   height: 100vw;
   background-position: 21px;
   margin-top: 15px;
@@ -62,17 +62,18 @@ body {
 
 @media screen and (min-width: 760px){
 
-  * {
-    border: 1px solid purple;
-  }
   .body {
     font-family: 'Poppins', sans-serif;
-  
+    padding: 2vw;
     text-align: left;
+  }
+  .first-part {
+    padding: 1vw;
   }
   .section-one-desktop {
     display: flex;
     flex-direction: row-reverse;
+    margin-top: 5%;
     
   }
   
@@ -81,10 +82,10 @@ body {
     
     background-image: url(images/illustration-working.svg);
     width: 50vw;
-    background-size: 50vw;
-    height: 50vw;
+    background-size: 54vw;
+    height: 40vw;
     background-position: 35px;
-    margin-top: 15px;
+    margin-top: 0;
     display: flex;
     background-repeat: no-repeat;
 }
@@ -111,8 +112,7 @@ body {
   font-weight: 500;
 }
 .button-container {
-  text-align: left;
- 
+  width: 100%;
 }
 .button {
   display: grid; 

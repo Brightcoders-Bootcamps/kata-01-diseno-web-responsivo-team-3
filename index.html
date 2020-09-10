@@ -16,102 +16,105 @@
   <script src="https://kit.fontawesome.com/2141aee2ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--Header-->
-  <header class="header">
-    <div>
-      <img src="images/logo.svg" class="logo">
-    </div>
-    <details class="nav">
-      <summary>
-        <svg class="menu-icon" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
-      </summary>
-      <ul class="nav-list">
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Resources</a></li>
-        <li class="hr-line"><hr/></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#" class="sign-up">Sign Up</a></li>   
-      </ul>
-    </details>
+  <section class="first-part">
     
-    <nav class="nav-desktop">
-        <a href="#">Features</a>
-        <a href="#">Pricing</a>
-        <a href="#">Resources</a>
-    </nav>
-      <div class="nav-desktop2">
-        <a href="#" class="login">Login</a>
-        <a href="#" class="sign-up">Sign Up</a>
+  <!--Header-->
+    <header class="header">
+      <div>
+        <img src="images/logo.svg" class="logo">
       </div>
-  </header>
-<!--Section one-->
-    <div class="section-one-desktop">
-      <div class="image"></div>
-      <div class="get-started-desktop">
-        <div class="get-started">
-          <h1>More than just shorter links</h1> 
-          <p>
-            Build your brand’s recognition and get detailed insights
-            on how your links are performing.
-          </p>
-          <div class="button-container">
-            <a href="#" class="button">Get Started</a>
+      <details class="nav">
+        <summary>
+          <svg class="menu-icon" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </summary>
+        <ul class="nav-list">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+          <li class="hr-line"><hr/></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#" class="sign-up">Sign Up</a></li>   
+        </ul>
+      </details>
+      
+      <nav class="nav-desktop">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+      </nav>
+        <div class="nav-desktop2">
+          <a href="#" class="login">Login</a>
+          <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+  <!--Section one-->
+      <div class="section-one-desktop">
+        <div class="image"></div>
+        <div class="get-started-desktop">
+          <div class="get-started">
+            <h1>More than just shorter links</h1> 
+            <p>
+              Build your brand’s recognition and get detailed insights
+              on how your links are performing.
+            </p>
+            <div class="button-container">
+              <a href="#" class="button">Get Started</a>
+            </div>
           </div>
         </div>
       </div>
+  <!--Section two-->
+          <div class="form">
+          <form class="shortenlink-form-form">
+              <input type="email" required="" value="Shorten a link here" class="shortenlink-form-form-input1">
+
+              <input type="submit" value="Shorten it!" class="shortenlink-form-form-input2">
+          </form>
+          </div>
+  <!--Section three-->
+    <section class="advanced-statistics" >
+      <h1 class="second-heading">Advanced Statistics</h1>
+
+      <p class="description">
+        Track how your links are performing across the web with our advanced statistics dashboard.
+      </p>
+
+      <ul class="boxes-list">
+        <li class="box">
+          <picture class="background-image"> 
+            <img  src="images/icon-brand-recognition.svg" alt="">
+          </picture>
+          <h1 class="sub-heading">Brand Recognition</h1>
+          <p class=" box-description">Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+        </li>
+        <li class="box">
+          <picture class="background-image" > 
+            <img src="images/icon-detailed-records.svg" alt="">
+          </picture>
+          <h1 class="sub-heading">Detailed Records</h1>
+          <p class="box-description">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+        </li>
+        <li class="box">
+          <picture class="background-image" >
+          <img src="images/icon-fully-customizable.svg" alt="">
+          </picture>
+          <h1 class="sub-heading">Fully Customizable</h1>
+          <p class="box-description">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+        </li>
+      </ul>
+
+    </section>
+
+    
+
+    <div class="boostLink">
+      <h2 class="boostLink-h2">Boost your links today</h2>
+      <a class="boostLink-a" href="">Get Started</a>
+          
     </div>
-<!--Section two-->
-        <div class="form">
-        <form class="shortenlink-form-form">
-            <input type="email" required="" value="Shorten a link here" class="shortenlink-form-form-input1">
-
-            <input type="submit" value="Shorten it!" class="shortenlink-form-form-input2">
-        </form>
-        </div>
-<!--Section three-->
-  <section class="advanced-statistics" >
-    <h1 class="second-heading">Advanced Statistics</h1>
-
-    <p class="description">
-      Track how your links are performing across the web with our advanced statistics dashboard.
-    </p>
-
-    <ul class="boxes-list">
-      <li class="box">
-        <picture class="background-image"> 
-          <img  src="images/icon-brand-recognition.svg" alt="">
-        </picture>
-        <h1 class="sub-heading">Brand Recognition</h1>
-        <p class=" box-description">Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
-      </li>
-      <li class="box">
-        <picture class="background-image" > 
-          <img src="images/icon-detailed-records.svg" alt="">
-        </picture>
-        <h1 class="sub-heading">Detailed Records</h1>
-        <p class="box-description">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
-      </li>
-      <li class="box">
-        <picture class="background-image" >
-         <img src="images/icon-fully-customizable.svg" alt="">
-        </picture>
-        <h1 class="sub-heading">Fully Customizable</h1>
-        <p class="box-description">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
-      </li>
-    </ul>
-
   </section>
-
-  
-
-  <div class="boostLink">
-    <h2 class="boostLink-h2">Boost your links today</h2>
-    <a class="boostLink-a" href="">Get Started</a>
-        
-  </div>
 <!--footer-->
   <footer class="footer">
     <div class="footerLogo">
