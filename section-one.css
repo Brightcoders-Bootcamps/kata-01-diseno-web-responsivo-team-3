@@ -9,7 +9,7 @@ body {
 .grid-one {
   grid-column: 1;
   grid-row: 1 / span 2;
-
+  width: 100vw;
 }
 
 
@@ -83,7 +83,6 @@ body {
     flex-direction: row-reverse;
     margin-top: 5%;
     margin-bottom: -5%;
-    padding: 2vw;
   }
   
   
