@@ -116,7 +116,7 @@
   list-style: none;
   padding: 8px;
 }
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 760px) {
   .boostLink {
     background-image: url(images/bg-boost-desktop.svg);
     height: 240px;

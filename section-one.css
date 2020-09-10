@@ -1,20 +1,22 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  
   text-align: center;
   margin: 0;
 }
 
-.image {
+.image{
   background-image: url(images/illustration-working.svg);
   width: 100vw;
   background-size: cover;
-  height: 331px;
+  height: 100vw;
   background-position: 21px;
   margin-top: 15px;
   display: flex;
   background-repeat: no-repeat;
 }
+
 
 .get-started {
   width: 100vw;
@@ -22,10 +24,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .get-started h1 {
-  font-size: 50px;
+  font-size: 10vw;
   color:#454545 ;
   font-weight: 700;
 }
@@ -55,4 +58,75 @@ body {
 .contact-form-img {
   width: 145%;
   margin-top: 10%;
+}
+
+@media screen and (min-width: 760px){
+
+  * {
+    border: 1px solid purple;
+  }
+  .body {
+    font-family: 'Poppins', sans-serif;
+  
+    text-align: left;
+  }
+  .section-one-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    
+  }
+  
+  
+  .image{
+    
+    background-image: url(images/illustration-working.svg);
+    width: 50vw;
+    background-size: 50vw;
+    height: 50vw;
+    background-position: 35px;
+    margin-top: 15px;
+    display: flex;
+    background-repeat: no-repeat;
+}
+.get-started-desktop {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  margin:5px;
+
+}
+.get-started {
+  width: 100%;
+  text-align: start;
+}
+.get-started h1 {
+  font-size: 6vw;
+  color:#454545 ;
+  font-weight: 700;
+}
+
+.get-started p {
+  font-size: 22px;
+  color: hsl(257, 7%, 63%);
+  font-weight: 500;
+}
+.button-container {
+  text-align: left;
+ 
+}
+.button {
+  display: grid; 
+  font-family: Poppins;
+  font-size:18px;
+  color:#FFFFFF;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 85px;
+  cursor: pointer;
+  width: 160px;
+  height: 48px; 
+  text-decoration: none;
+  place-content: center;
+  font-weight: 700;
+}
 }

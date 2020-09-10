@@ -14,10 +14,10 @@
 }
 .nav-list {
   background: hsl(257, 27%, 26%);
-  width: 85%;
+  width: 95vw;
   position: absolute;
   left: 0;
-  padding: 8% 5%;
+  padding: 8% 28%;
   border-radius: 10px;
   margin: 2%;
 }
@@ -56,9 +56,11 @@
 }
 .menu-icon{
   color: var(--gray);
+  width: 30px;
+  height: 30px;
 }
 .nav {
-  margin-right: 10%;
+  margin-right: 5vw;
 }
 @media screen and (min-width: 760px) {
   .nav {

@@ -1,19 +1,20 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  text-align: center;
+  
 }
 
 .image{
   background-image: url(images/illustration-working.svg);
   width: 100vw;
   background-size: cover;
-  height: 331px;
+  height: 100vw;
   background-position: 21px;
   margin-top: 15px;
   display: flex;
   background-repeat: no-repeat;
 }
+
 
 .get-started {
   width: 100vw;
@@ -24,7 +25,7 @@ body {
 }
 
 .get-started h1 {
-  font-size: 50px;
+  font-size: 10vw;
   color:#454545 ;
   font-weight: 700;
 }
@@ -54,4 +55,28 @@ body {
 .contact-form-img {
   width: 145%;
   margin-top: 10%;
+}
+@media screen and (min-width: 760px){
+
+  * {
+    border: 1px solid red;
+  }
+
+  .image-dektop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .image{
+    background-image: url(images/illustration-working.svg);
+    width: 50vw;
+    background-size: cover;
+    height: 50vw;
+    background-position: 21px;
+    margin-top: 15px;
+    display: flex;
+    background-repeat: no-repeat;
+}
+.get-started-desktop {
+  width: 50vw;
+}
 }
