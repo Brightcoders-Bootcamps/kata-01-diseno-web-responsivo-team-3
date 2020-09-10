@@ -70,11 +70,14 @@
     </div>
   </section>
 <!--Section two-->
-        <form class="shortenlink-form-form">
-            <input type="email" required="" value="Shorten a link here..." class="shortenlink-form-form-input1">
+        <form class="shortenlink-form-form" id="linkForm">
+            <input type="url" id="longUrl" name="longUrl" value="Shorten a link here..." class="shortenlink-form-form-input1">
 
-            <input type="submit" value="Shorten it!" class="shortenlink-form-form-input2">
+            <input type="submit" value="Shorten it!" class="shortenlink-form-form-input2" id="submit-click">
         </form>
+        <div id="contenido" class="mt-5">
+          <p></p>
+        </div>
         
 <!--Section three-->
   <section class="advanced-statistics" >
@@ -178,7 +181,7 @@
     Coded by <a href="#">Team 3</a>.
     </div>-->
   </footer>
-
+  <script defer src="functions/main.js"></script>
 </body>
 
 </html>
