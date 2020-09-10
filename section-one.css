@@ -9,7 +9,7 @@ body {
 .grid-one {
   grid-column: 1;
   grid-row: 1 / span 2;
-
+  width: 100vw;
 }
 
 
@@ -72,17 +72,17 @@ body {
 
   .body {
     font-family: 'Poppins', sans-serif;
-    padding: 2vw;
+    
     text-align: left;
   }
-  .first-part {
-    padding: 1vw;
+  .header {
+    padding: 2vw;
   }
   .section-one-desktop {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 5%;
-    
+    margin-bottom: -5%;
   }
   
   
@@ -90,9 +90,9 @@ body {
     
     background-image: url(images/illustration-working.svg);
     width: 50vw;
-    background-size: 54vw;
+    background-size: 60vw;
     height: 40vw;
-    background-position: 35px;
+    background-position: 9px;
     margin-top: 0;
     display: flex;
     background-repeat: no-repeat;
@@ -107,17 +107,21 @@ body {
 .get-started {
   width: 100%;
   text-align: start;
+  margin-top: -2%;
 }
 .get-started h1 {
   font-size: 6vw;
   color:#454545 ;
   font-weight: 700;
+  margin-bottom: 0;
+  line-height: 118%;
 }
 
 .get-started p {
-  font-size: 22px;
+  font-size: 18px;
   color: hsl(257, 7%, 63%);
   font-weight: 500;
+  margin-bottom: 5%;
 }
 .button-container {
   width: 100%;

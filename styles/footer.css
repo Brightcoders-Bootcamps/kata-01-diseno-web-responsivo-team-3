@@ -1,5 +1,5 @@
 .boostLink {
-  background-image:url(images/bg-boost-mobile.svg);
+  background-image: url('../images/bg-boost-mobile.svg');
   background-color: hsl(257, 27%, 26%);
   background-repeat: no-repeat;
   display: flex;
@@ -118,7 +118,7 @@
 }
 @media only screen and (min-width: 760px) {
   .boostLink {
-    background-image: url(images/bg-boost-desktop.svg);
+    background-image: url('../images/bg-boost-desktop.svg');
     height: 240px;
     background-position: right;
     background-size: cover;

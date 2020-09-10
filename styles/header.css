@@ -14,12 +14,12 @@
 }
 .nav-list {
   background: hsl(257, 27%, 26%);
-  width: 95vw;
   position: absolute;
   left: 0;
-  padding: 8% 28%;
+  right: 0;
+  padding: 22px 0;
   border-radius: 10px;
-  margin: 2%;
+  margin: 25px 25px 0;
 }
 .nav-desktop {
   display: none;
@@ -55,7 +55,7 @@
   place-content: center;
 }
 .menu-icon{
-  color: var(--gray);
+  color: var(--grayish-violet);
   width: 30px;
   height: 30px;
 }
