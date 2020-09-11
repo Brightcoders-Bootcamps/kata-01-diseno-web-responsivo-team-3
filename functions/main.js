@@ -16,8 +16,8 @@ async function fetchNewLink(longUrl) {
     let newLink = await getShortLink(newLinkJson);
 
     console.log(newLink);
-    fullLinkContent.innerHTML = `<p>${longUrl}</p>`
-    shortLinkContent.innerHTML = `<p>https://rel.ink/${newLink.hashid}</p>`
+    fullLinkContent.innerHTML = `${longUrl}`
+    shortLinkContent.innerHTML = `https://rel.ink/${newLink.hashid}`
   } catch(urlError) {
     console.error('Fatal error: ', urlError);
     /* function showError(){
