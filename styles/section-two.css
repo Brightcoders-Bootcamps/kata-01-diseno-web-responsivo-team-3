@@ -1,3 +1,10 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 .shortenlink-form-form {
   background-color: hsl(257, 27%, 26%);
@@ -28,6 +35,7 @@
   font-weight: 700;
   margin-top: 26px;
   margin-bottom: -38px;
+  padding: 0;
 }
 
 .shortenlink-form-form-input1 {
@@ -40,7 +48,7 @@
   display: block;
   height: 40px;
   width: 250px;
-  padding-left: 5%;
+  padding: 0;
 }
 
 .copySection {
@@ -155,6 +163,7 @@
     font-size: 25px;
     place-self: center;
     padding-left: 0;
+    margin-bottom: 0;
   }
 
     .shortenlink-form-form-input2 {
