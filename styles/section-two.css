@@ -1,3 +1,10 @@
+.api {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  z-index: 10;
+  align-self: end;
+  justify-self: center;
+}
 .shortenlink-form-form {
   background-color: hsl(257, 27%, 26%);
   background-image:url('../images/bg-shorten-mobile.svg');
@@ -5,11 +12,7 @@
   background-position: top right;
   border-radius: 8px;
   padding: 26px;
-  grid-column: 1;
-  grid-row: 2 / span 2;
-  z-index: 10;
-  align-self: end;
-  justify-self: center;
+  
 }
 
 .shortenlink-form-form-input2 {
@@ -48,7 +51,7 @@
   margin-left: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
-
+  
 
 }
 .fullLink {
@@ -85,6 +88,7 @@
   justify-content: center;
   width: 90px;
   border: none;
+  display: none;
 }
 .copyButton:visited {
   background-color: hsl(257, 27%, 26%);

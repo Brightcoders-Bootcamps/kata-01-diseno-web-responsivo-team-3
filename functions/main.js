@@ -8,6 +8,7 @@ form.addEventListener("submit", function(event){
   let longUrl = event.target.elements['longUrl'].value;
   
   fetchNewLink(longUrl);
+  document.getElementById('Aver').style.display = "block";
 });
 
 async function fetchNewLink(longUrl) {
