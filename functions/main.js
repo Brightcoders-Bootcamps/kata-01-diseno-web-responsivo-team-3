@@ -1,3 +1,4 @@
+let linksStore =[];
 const form = document.getElementById('linkForm');
 let shortLinkContent = document.querySelector('#shortLinkContent')
 let fullLinkContent = document.querySelector('#fullLinkContent')
@@ -22,6 +23,9 @@ async function fetchNewLink(longUrl) {
   try {
     let newLinkJson = await postLink(longUrl);
     let newLink = await getShortLink(newLinkJson);
+    linksStore.push(newLink);
+    localStorage.setItem('linksList', JSON.stringify(linksStore))
+
 
     console.log(newLink);
     fullLinkContent.innerHTML = `${longUrl}`
