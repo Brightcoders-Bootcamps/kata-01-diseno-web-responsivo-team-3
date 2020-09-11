@@ -26,7 +26,7 @@
   margin-bottom: 75px;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 834px) {
   .second-heading {
     font-size: 55px;
     color: var(--very-dark-blue);
@@ -44,11 +44,18 @@
     margin: 0 315px 100px;
   }
 }
-  .box-description {
-    font-weight: 500;
-    color: var(--grayish-violet);
-    font-size: 16px;
+
+@media screen and (min-width: 1040px) {
+  .sub-heading {
+    justify-self: left;
   }
+}
+
+.box-description {
+  font-weight: 500;
+  color: var(--grayish-violet);
+  font-size: 16px;
+}
 
 .box .background-image {
   background-color: var(--dark-violet);
@@ -70,13 +77,7 @@
   justify-items: center;
 }
 
-
 .box {
-  background: var(--white);
-  border-radius: 7px;
-  width: 75%;
-  margin-bottom: 80px;
-  padding: 0 25px 30px;
   display: grid;
   justify-items: center;
 }
@@ -94,33 +95,71 @@
   content: none;
 }
 
-@media screen and (min-width: 760px) {
+.box-content {
+  display: grid;
+  justify-items: center;
+  background: var(--white);
+  border-radius: 7px;
+  width: 75%;
+  margin-bottom: 80px;
+  padding: 0 25px 30px;
+}
+
+@media screen and (min-width: 1040px) {
   .boxes-list {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 45px;
-
+    margin-block-end: 160px;
+    max-width: 1440px;
+    margin: 0 auto 160px;
+    grid-column-gap: 45px;
+    width: 95vw;
   }
 
-  .box {
-    display: grid;
-    justify-items: self-start;
-    grid-template-rows: auto auto auto auto;
+  .boxes-list::before {
+    content: '';
+    height: 7px;
     width: 100%;
+    background: var(--cyan);
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    align-self: center;
+  }
+  .box {
+    grid-row: 1;
+  }
+
+  .box:nth-child(1) {
+    grid-column: 1;
+  }
+
+  .box:nth-child(2) {
+    grid-column: 2;
+    margin: 57px 0 0;
+  }
+
+  .box:nth-child(3) {
+    grid-column: 3;
+    margin: 114px 0 0;
+  }
+
+  .box-content {
+    grid-column: 2;
+    width: auto;
     padding: 0;
+    margin: 0;
+    height: 400px;
   }
-  .box .box-direction {
-    
-  }
+
   .box-description {
     font-size: 21px;
     text-align: left;
-    margin: 0 35px 60px;
+    margin: 0 30px 60px;
   }
 
   .box .background-image {
     width: 70px;
     height: 70px;
+    justify-self: left;
   }
 
   .desktop-image {
@@ -128,14 +167,9 @@
   }
   
   .box::before {
+    content: none;
     width: 45px;
     height: 7px;
-    grid-row: span 1 / 4;
-    align-self: center;
-    margin-top: 0;
-    margin-left: -45px;
-
+    margin: 0;
   }
-
 }
-

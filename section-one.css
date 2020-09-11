@@ -101,7 +101,7 @@ body {
   width: 50vw;
   display: flex;
   flex-direction: column;
-  margin:5px;
+  margin:45px;
 
 }
 .get-started {
@@ -118,10 +118,11 @@ body {
 }
 
 .get-started p {
-  font-size: 18px;
+  font-size: 19px;
   color: hsl(257, 7%, 63%);
   font-weight: 500;
-  margin-bottom: 5%;
+  margin-bottom: 40px;
+  margin-top: 15px;
 }
 .button-container {
   width: 100%;
@@ -135,8 +136,8 @@ body {
   border: none;
   border-radius: 85px;
   cursor: pointer;
-  width: 160px;
-  height: 48px; 
+  width: 165px;
+  height: 53px; 
   text-decoration: none;
   place-content: center;
   font-weight: 700;

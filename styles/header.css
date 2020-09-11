@@ -70,6 +70,7 @@
     display: flex;
     flex-basis: 75%;
     align-items: center;
+    margin-inline-start: 2%;
   }
   .nav-desktop li{
     list-style: none;
@@ -79,11 +80,12 @@
     padding: 0 20px;
     font-weight: 700;
     color: var(--grayish-violet);
-    font-size: 15px;
+    font-size: 20px;
+    
     
   }
   .logo{
-    margin-top: 2%;
+    margin-top: 15%;
     margin-left: 6%;
   }
   .nav-desktop2 {
@@ -102,7 +104,9 @@
     text-decoration: none;
     padding: 0 20px;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 20px;
+    height: 58px;
+    width: 155px;
     
 
   }

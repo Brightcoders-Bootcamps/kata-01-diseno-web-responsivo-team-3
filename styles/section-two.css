@@ -100,3 +100,31 @@
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 760px) {
+  .shortenlink-form-form {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5%;
+    width: 1020px;
+    height: 80px;
+    border-radius: 15px;
+  }
+  .shortenlink-form-form-input1 {
+    border-radius: 10px;
+    height: 65px;
+    width: 650px;
+    font-size: 25px;
+    place-self: center;
+    margin: 0 0 0 35px
+  }
+
+    .shortenlink-form-form-input2 {
+      border-radius: 10px;
+      height: 65px;
+      width: 235px;
+      font-size: 23px;
+      place-self: center;
+    }
+  
+}

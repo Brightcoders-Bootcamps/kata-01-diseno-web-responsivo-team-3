@@ -79,5 +79,6 @@ body {
 }
 .get-started-desktop {
   width: 50vw;
+  margin-inline-start: 45px;
 }
 }
