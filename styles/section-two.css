@@ -1,3 +1,26 @@
+.copySection {
+  display: flex;
+
+}
+.fullLink {
+  background-color: saddlebrown;
+  height: 500px;
+}
+.shortenLink {
+  background-color: red;
+  height: 500px;
+}
+.copyButton{
+  font-family: Poppins;
+  font-size:18px;
+  color:#FFFFFF;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 85px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+}
 .shortenlink-form-form {
   background-color: hsl(257, 27%, 26%);
   background-image:url('../images/bg-shorten-mobile.svg');

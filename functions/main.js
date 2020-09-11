@@ -1,4 +1,7 @@
 const form = document.getElementById('linkForm');
+let shortLinkContent = document.querySelector('#shortLinkContent')
+let fullLinkContent = document.querySelector('#fullLinkContent')
+
 form.addEventListener("submit", function(event){
   event.preventDefault();
 
@@ -7,21 +10,20 @@ form.addEventListener("submit", function(event){
   fetchNewLink(longUrl);
 });
 
-
-
-
 async function fetchNewLink(longUrl) {
   try {
     let newLinkJson = await postLink(longUrl);
     let newLink = await getShortLink(newLinkJson);
 
     console.log(newLink);
-} catch(urlError) {
+    fullLinkContent.innerHTML = `<p>${longUrl}</p>`
+    shortLinkContent.innerHTML = `<p>https://rel.ink/${newLink.hashid}</p>`
+  } catch(urlError) {
     console.error('Fatal error: ', urlError);
     /* function showError(){
         alert ("An error with your link has ocurred.);
         } */
-}
+  }
 }
 
 function postLink(longUrl) {
@@ -52,8 +54,3 @@ function getShortLink(response) {
       throw new Error(`getShortLink failed due to ${result.statusText}`);
   });
 }
-
-let contenido = document.querySelector('#contenido')
-//function getLink(element){
-//	alert(element);
-//}
