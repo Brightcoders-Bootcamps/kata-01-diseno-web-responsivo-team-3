@@ -6,6 +6,8 @@ function copiarAlPortapapeles(shortLinkContent ) {
     aux.select();
     document.execCommand("copy");
     document.body.removeChild(aux);
+    document.getElementById("Aver").style.backgroundColor = "hsl(257, 27%, 26%)";
+    document.getElementById("Aver").value = "Copied!";
     
 }
 

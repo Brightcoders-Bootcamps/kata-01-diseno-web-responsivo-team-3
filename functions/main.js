@@ -4,12 +4,18 @@ let fullLinkContent = document.querySelector('#fullLinkContent')
 
 form.addEventListener("submit", function(event){
   event.preventDefault();
-
   let longUrl = event.target.elements['longUrl'].value;
-  
+  if(longUrl.length == 0){
+    document.getElementById("longUrl").style.border="2px solid #E74C3C";
+    document.getElementById("valP").style.display = "block";
+  }else{
   fetchNewLink(longUrl);
-  document.getElementById('Aver').style.display = "block";
-  document.getElementById('box').style.display = "flex";
+    document.getElementById('Aver').style.display = "block";
+    document.getElementById('box').style.display = "flex";
+    document.getElementById("longUrl").style.border="";
+    document.getElementById("valP").style.display = "";
+  }
+
 });
 
 async function fetchNewLink(longUrl) {

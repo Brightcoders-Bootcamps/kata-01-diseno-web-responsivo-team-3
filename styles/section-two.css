@@ -11,6 +11,7 @@
   z-index: 10;
   align-self: end;
   justify-self: center;
+  height: 111px
 }
 
 .shortenlink-form-form-input2 {
@@ -25,6 +26,8 @@
   height: 40px;
   width: 250px;
   font-weight: 700;
+  margin-top: 26px;
+  margin-bottom: -38px;
 }
 
 .shortenlink-form-form-input1 {
@@ -94,15 +97,25 @@
 .copyButton:visited {
   background-color: hsl(257, 27%, 26%);
 }
+.validation {
+  display: none;
+  font-size: 10px;
+  color:#E74C3C ;
+  font-style: italic;
+  position: relative;
+  right: 80px;
+  bottom: 37px;
+}
 @media only screen and (max-width: 760px) {
   .copySection {
-    display: inline-flex;
+    display: none;
     flex-direction: column;
     align-items: self-start;
     margin-left: 7%;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 75%
+
     
   }
   .copyButton{
@@ -150,6 +163,16 @@
       width: 20vw;
       font-size: 23px;
       place-self: center;
+      margin: auto;
+    }
+    .validation {
+      display: none;
+      font-size: 10px;
+      color:#E74C3C ;
+      font-style: italic;
+      position: relative;
+      right: 25vw;
+      bottom: 1vw;
     }
   
 }
