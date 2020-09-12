@@ -65,8 +65,9 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 - [ ] Actualizar la sección **Página Web** con la dirección para el acceso a la página web publicada
 
 ## Página web
-Agrega aquí un enlace a tu página web publicada.
-  
+Our website preview:
+https://5f5c0f461fc05d1e40032c06--mystifying-kepler-74c089.netlify.app
+
 ## Evaluación / Revisión
 
 - [ ] Cumplimiento de requerimientos funcionales

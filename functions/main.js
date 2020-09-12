@@ -9,6 +9,7 @@ form.addEventListener("submit", function(event){
   
   fetchNewLink(longUrl);
   document.getElementById('Aver').style.display = "block";
+  document.getElementById('box').style.display = "flex";
 });
 
 async function fetchNewLink(longUrl) {

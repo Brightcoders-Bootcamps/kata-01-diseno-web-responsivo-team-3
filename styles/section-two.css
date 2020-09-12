@@ -47,9 +47,12 @@
   align-items: baseline;
   margin-right: 70px;
   margin-left: 70px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  
+  margin-top: -30px;
+  margin-bottom: 70px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display:none;
 
 }
 .fullLink {
@@ -91,16 +94,35 @@
 .copyButton:visited {
   background-color: hsl(257, 27%, 26%);
 }
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 760px) {
   .copySection {
     display: inline-flex;
     flex-direction: column;
     align-items: self-start;
-    margin-right: 70px;
-    margin-left: 70px;
+    margin-left: 7%;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 75%
+    
   }
+  .copyButton{
+    color: #ffffff;
+    font-weight: bold;
+    background-color: hsl(180, 66%, 49%);
+    font-size: 15px;
+    border-radius: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    border: none;
+    display: none;
+    
+  }
+.fullLink{
+  text-align: left;
+}
 }
 @media screen and (min-width: 760px) {
   .shortenlink-form-form {
@@ -108,23 +130,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5%;
-    width: 1020px;
+    width: 90vw;
     height: 80px;
     border-radius: 15px;
+    
   }
   .shortenlink-form-form-input1 {
     border-radius: 10px;
     height: 65px;
-    width: 650px;
+    width: 60vw;
     font-size: 25px;
     place-self: center;
-    margin: 0 0 0 35px
+    padding-left: 0;
   }
 
     .shortenlink-form-form-input2 {
       border-radius: 10px;
       height: 65px;
-      width: 235px;
+      width: 20vw;
       font-size: 23px;
       place-self: center;
     }
