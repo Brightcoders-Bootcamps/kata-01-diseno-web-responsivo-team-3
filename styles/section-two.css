@@ -18,7 +18,7 @@ html{
   z-index: 10;
   align-self: end;
   justify-self: center;
-  height: 111px
+  height: 156px
 }
 
 .shortenlink-form-form-input2 {
@@ -152,7 +152,7 @@ html{
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5%;
     width: 90vw;
-    height: 80px;
+    height: 118px;
     border-radius: 15px;
     
   }
