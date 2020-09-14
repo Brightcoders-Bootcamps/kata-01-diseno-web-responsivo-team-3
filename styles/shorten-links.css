@@ -29,6 +29,7 @@
   white-space: nowrap;
   overflow: hidden;
   margin: 0;
+  width: 100%;
 }
 @media screen and (min-width: 834px) {
   .link .long-link {
