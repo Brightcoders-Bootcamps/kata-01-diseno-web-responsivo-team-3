@@ -11,7 +11,7 @@
   z-index: 10;
   align-self: end;
   justify-self: center;
-  height: 156px
+  height: 111px
 }
 
 .shortenlink-form-form-input2 {
@@ -145,7 +145,7 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5%;
     width: 90vw;
-    height: 118px;
+    height: 80px;
     border-radius: 15px;
     
   }
