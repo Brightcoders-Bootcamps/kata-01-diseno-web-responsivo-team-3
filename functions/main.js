@@ -1,43 +1,47 @@
-let linksStore =[];
+const SHORTEN_LINKS_STORE =[];
 const form = document.getElementById('linkForm');
-let shortLinkContent = document.querySelector('#shortLinkContent')
-let fullLinkContent = document.querySelector('#fullLinkContent')
-
+const list = document.getElementById('shortenList');
+function renderShortenListFromLocalStorage(data) {
+  for (const link of data) {
+    const { url, hashid } = link;
+    const template = `
+      <li class="link">
+        <p class="long-link">${url}</p>
+        <hr>
+        <p class="short-link">https://rel.ink/${hashid}</p>
+        <button onclick="copy(this)">Copy</button>
+      </li>
+    `;
+    list.insertAdjacentHTML('afterbegin', template);
+  }
+}
+if (localStorage.getItem('shorten::list')) {
+  const data = JSON.parse(localStorage.getItem('shorten::list'));
+  renderShortenListFromLocalStorage(data);
+}
 form.addEventListener("submit", function(event){
   event.preventDefault();
   let longUrl = event.target.elements['longUrl'].value;
-  if(longUrl.length == 0){
+  if(longUrl.length == 0) {
     document.getElementById("longUrl").style.border="2px solid #E74C3C";
     document.getElementById("valP").style.display = "block";
-  }else{
-  fetchNewLink(longUrl);
-    document.getElementById('Aver').style.display = "block";
-    document.getElementById('box').style.display = "flex";
-    document.getElementById("longUrl").style.border="";
-    document.getElementById("valP").style.display = "";
+  } else {
+    fetchNewLink(longUrl);
   }
-
 });
-
 async function fetchNewLink(longUrl) {
   try {
     let newLinkJson = await postLink(longUrl);
     let newLink = await getShortLink(newLinkJson);
-    linksStore.push(newLink);
-    localStorage.setItem('linksList', JSON.stringify(linksStore))
-
-
-    console.log(newLink);
-    fullLinkContent.innerHTML = `${longUrl}`
-    shortLinkContent.innerHTML = `https://rel.ink/${newLink.hashid}`
+    SHORTEN_LINKS_STORE.push(newLink);
+    localStorage.setItem('shorten::list', JSON.stringify(SHORTEN_LINKS_STORE));
+    const data = JSON.parse(localStorage.getItem('shorten::list'));
+    list.innerHTML = '';
+    renderShortenListFromLocalStorage(data);
   } catch(urlError) {
     console.error('Fatal error: ', urlError);
-    /* function showError(){
-        alert ("An error with your link has ocurred.);
-        } */
   }
 }
-
 function postLink(longUrl) {
   return fetch('https://rel.ink/api/links/', {
       method: 'POST',
@@ -51,14 +55,12 @@ function postLink(longUrl) {
     .then(response => {
       if(response.ok) {
         return response.json();
-      }
-      
+      } 
       throw new Error(`postLink failed due to ${response.statusText}`);
     });
 }
-
 function getShortLink(response) {
-  return fetch('https://rel.ink/api/links/' + response.hashid) // https://rel.ink/api/links/hola
+  return fetch('https://rel.ink/api/links/' + response.hashid)
     .then(result => {
       if (result.ok){
         return result.json();
@@ -66,3 +68,4 @@ function getShortLink(response) {
       throw new Error(`getShortLink failed due to ${result.statusText}`);
   });
 }
+

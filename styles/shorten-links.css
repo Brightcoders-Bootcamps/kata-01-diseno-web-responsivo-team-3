@@ -1,0 +1,87 @@
+.links-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-row-gap: 15px;
+}
+.link {
+  background: var(--white);
+  display: grid;
+  height: 150px;
+  place-content: space-evenly;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+@media screen and (min-width: 834px) {
+  .link {
+    grid-template-columns: repeat(2, 1fr) auto;
+    grid-column-gap: 30px;
+    height: auto;
+    align-items: center;
+    padding: 10px 25px;
+  }
+}
+.link .long-link {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+@media screen and (min-width: 834px) {
+  .link .long-link {
+    justify-self: left;
+  }
+}
+.link hr {
+  margin: 0 -15px;
+  height: 1px;
+  border: none;
+  background-color: var(--light-gray);
+}
+@media screen and (min-width: 834px) {
+  .link hr {
+    display: none;
+  }
+}
+.link .short-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border: none;
+  color: var(--cyan);
+  outline: none;
+}
+@media screen and (min-width: 834px) {
+  .link .short-link {
+    justify-self: right;
+  }
+}
+.link button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border: none;
+  background: var(--cyan);
+  color: var(--white);
+  height: 40px;
+  border-radius: 6px;
+}
+.link .copied {
+  background: var(--dark-violet);
+}
+@media screen and (min-width: 834px) {
+  .link button {
+    width: 100px;
+  }
+}
+.link button:active {
+  background: var(--dark-violet);
+}
+.link button:focus {
+  outline: var(--cyan);
+  background: var(--dark-violet);
+}
+.clipboard {
+  position: fixed;
+}
