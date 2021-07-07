@@ -1,0 +1,146 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  
+  text-align: center;
+  margin: 0;
+}
+
+.grid-one {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 100vw;
+}
+
+
+.image{
+  background-image: url(images/illustration-working.svg);
+  width: 100vw;
+  background-size: 130vw;
+  height: 100vw;
+  background-position: 21px;
+  margin-top: 15px;
+  display: flex;
+  background-repeat: no-repeat;
+}
+
+
+.get-started {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40%;
+  
+}
+
+.get-started h1 {
+  font-size: 10vw;
+  color:#454545 ;
+  font-weight: 700;
+}
+
+.get-started p {
+  font-size: 18px;
+  color: hsl(257, 7%, 63%);
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.button {
+  display: grid; 
+  font-family: Poppins;
+  font-size:18px;
+  color:#FFFFFF;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 85px;
+  cursor: pointer;
+  width: 160px;
+  height: 48px; 
+  text-decoration: none;
+  place-content: center;
+  font-weight: 700;
+}
+
+.contact-form-img {
+  width: 145%;
+  margin-top: 10%;
+}
+
+@media screen and (min-width: 760px){
+
+  .body {
+    font-family: 'Poppins', sans-serif;
+    
+    text-align: left;
+  }
+  .header {
+    padding: 2vw;
+  }
+  .section-one-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5%;
+    margin-bottom: -5%;
+  }
+  
+  
+  .image{
+    
+    background-image: url(images/illustration-working.svg);
+    width: 50vw;
+    background-size: 60vw;
+    height: 40vw;
+    background-position: 9px;
+    margin-top: 0;
+    display: flex;
+    background-repeat: no-repeat;
+}
+.get-started-desktop {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  margin:45px;
+
+}
+.get-started {
+  width: 100%;
+  text-align: start;
+  margin-top: -2%;
+}
+.get-started h1 {
+  font-size: 6vw;
+  color:#454545 ;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 118%;
+}
+
+.get-started p {
+  font-size: 19px;
+  color: hsl(257, 7%, 63%);
+  font-weight: 500;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+.button-container {
+  width: 100%;
+}
+.button {
+  display: grid; 
+  font-family: Poppins;
+  font-size:18px;
+  color:#FFFFFF;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 85px;
+  cursor: pointer;
+  width: 165px;
+  height: 53px; 
+  text-decoration: none;
+  place-content: center;
+  font-weight: 700;
+}
+}

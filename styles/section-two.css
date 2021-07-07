@@ -1,0 +1,180 @@
+
+.shortenlink-form-form {
+  background-color: hsl(257, 27%, 26%);
+  background-image:url('../images/bg-shorten-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 8px;
+  padding: 26px;
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  z-index: 10;
+  align-self: end;
+  justify-self: center;
+  height: 111px
+}
+
+.shortenlink-form-form-input2 {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color:hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  width: 250px;
+  font-weight: 700;
+  margin-top: 26px;
+  margin-bottom: -38px;
+  padding: 0;
+}
+
+.shortenlink-form-form-input1 {
+  color: hsl(0, 0%, 75%);
+  text-align: left;
+  font-family: 'Poppins';
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  display: block;
+  height: 40px;
+  width: 250px;
+  padding: 0;
+}
+
+.copySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: -30px;
+  margin-bottom: 70px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display:none;
+
+}
+.fullLink {
+  /*background-color: saddlebrown;*/
+  /*height: 240px;*/
+  word-break: break-all;
+  padding: 10px;
+}
+
+.shortenLink {
+  /*background-color: red;*/
+  /*height: 240px;*/
+  padding: 10px;
+  color: hsl(180, 66%, 49%);
+}
+.copyButton:hover {
+  background-color: rgb(182, 236, 255);
+}
+.separador {
+  width: 100px;
+  /*height: 240px;*/
+  background-color: salmon;
+  
+}
+.copyButton{
+  color: #ffffff;
+  font-weight: bold;
+  background-color: hsl(180, 66%, 49%);
+  font-size: 15px;
+  border-radius: 8px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  border: none;
+  display: none;
+}
+.copyButton:visited {
+  background-color: hsl(257, 27%, 26%);
+}
+.validation {
+  display: none;
+  font-size: 10px;
+  color:#E74C3C ;
+  font-style: italic;
+  position: relative;
+  right: 80px;
+  bottom: 37px;
+}
+@media only screen and (max-width: 760px) {
+  .copySection {
+    display: none;
+    flex-direction: column;
+    align-items: self-start;
+    margin-left: 7%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 75%
+
+    
+  }
+  .copyButton{
+    color: #ffffff;
+    font-weight: bold;
+    background-color: hsl(180, 66%, 49%);
+    font-size: 15px;
+    border-radius: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    border: none;
+    display: none;
+    
+  }
+.fullLink{
+  text-align: left;
+}
+}
+@media screen and (min-width: 760px) {
+  .shortenlink-form-form {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5%;
+    width: 90vw;
+    height: 80px;
+    border-radius: 15px;
+    
+  }
+  .shortenlink-form-form-input1 {
+    border-radius: 10px;
+    height: 65px;
+    width: 60vw;
+    font-size: 25px;
+    place-self: center;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+    .shortenlink-form-form-input2 {
+      border-radius: 10px;
+      height: 65px;
+      width: 20vw;
+      font-size: 23px;
+      place-self: center;
+      margin: auto;
+    }
+    .validation {
+      display: none;
+      font-size: 10px;
+      color:#E74C3C ;
+      font-style: italic;
+      position: relative;
+      right: 25vw;
+      bottom: 1vw;
+    }
+  
+}
